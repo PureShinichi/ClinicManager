@@ -1,79 +1,34 @@
-dummy readme
+<!-- ===== Project Title ===== -->
+# ClinicManager - PureClinic Manager
 
----
+<!-- ===== Project Description ===== -->
+## Project Description
+ClinicManager is a web-based application designed to help clinics manage their daily operations efficiently. It provides a centralized platform to manage patients, appointments, and view dashboard analytics. The interface is fully responsive, supporting mobile, tablet, and desktop devices.
 
+<!-- ===== Features ===== -->
 ## Features
+- <!-- Dashboard overview --> **Dashboard**: Overview of clinic activities and statistics.
+- <!-- Manage patient information --> **Patient Management**: Add, view, and manage patient information.
+- <!-- Schedule appointments --> **Appointments**: Schedule, view, and manage appointments.
+- <!-- Works on any device --> **Responsive Design**: Works on mobile, tablet, and desktop.
+- <!-- Sidebar menu --> **Interactive Sidebar**: Slide-out menu for easy navigation.
 
-- **Login Page** (`index.html`)  
-  - Simple login with default credentials: `admin / root`  
-  - Error messages for invalid login  
+<!-- ===== Instructions to Test Login ===== -->
+## Instructions to Test Login
+1. <!-- Open website --> Open the website: [ClinicManager](https://pureshinichi.github.io/ClinicManager/).  
+2. <!-- Enter credentials --> Enter your **rdmin** and **root**. (ALL LOWER CASE)  
+3. <!-- Click login --> Click the **Login** button to access the homepage.  
+4. <!-- Error message --> If credentials are invalid, an error message *"Invalid Username or Password!"* will appear.
 
-- **Home Page** (`homepages.html`)  
-  - Welcome screen with navigation menu  
-  - Background image and styled buttons  
+<!-- ===== Frameworks / Libraries ===== -->
+## Frameworks / Libraries Used
+- <!-- Layout framework --> **Bootstrap 5**: For responsive layout and styling.  
+- <!-- Fonts --> **Google Fonts**: Montserrat, Candal.  
+- <!-- HTML/CSS --> **HTML5 & CSS3**: Core structure and styling.  
+- <!-- Interactivity --> **JavaScript**: For interactive elements like the sidebar toggle.  
 
-- **Dashboard** (`dashboard.html`)  
-  - Doughnut chart showing appointment overview (Completed vs Upcoming)  
-  - Chart updates dynamically based on patient data from `patients.html`  
-  - Patients list summary  
-
-- **Patients Page** (`patients.html`)  
-  - Full **CRUD** functionality (Add, Edit, Delete)  
-  - Fields: Name, Phone Number, Appointment Type, Status (Completed / Upcoming)  
-  - Updates chart dynamically on dashboard  
-  - Stores data in localStorage  
-
-- **Appointments Page** (`appointments.html`)  
-  - Lists all appointments in a table  
-  - Shows badges for Completed / Upcoming status  
-  - Automatically connected with `patients.html` data  
-
-- **Styling**  
-  - Consistent, modern look using **Bootstrap 5** and custom CSS  
-  - Cards, buttons, tables, and chart designed to be responsive and aesthetic  
-
-- **Chart Integration**  
-  - Doughnut chart using **Chart.js**  
-  - Reflects current patient appointments (Completed vs Upcoming)  
-  - Updates in real-time when adding or removing patients  
-
----
-
-## Pages Overview
-
-### index.html (Login)
-- `bodyindex` class with background GIF  
-- Login form with username and password fields  
-- Redirects to `homepages.html` after successful login  
-
-### homepages.html
-- `bodyhome` class with background image  
-- Navigation bar linking to Dashboard, Patients, Appointments  
-- Menu buttons linking to management pages  
-
-### dashboard.html
-- `body` class with background image  
-- Patients list on left  
-- Doughnut chart centered  
-- Buttons to filter Total / Upcoming / Completed appointments  
-
-### patients.html
-- `body` class with background image  
-- Table showing all patients and details  
-- Add new patients with Name, Phone, Appointment Type, Status  
-- Delete or edit existing patients  
-- Updates dashboard chart in real-time  
-
-### appointments.html
-- Table showing appointment lists  
-- Status badges for Completed / Upcoming  
-- Connected to `patients.html` data  
-
----
-
-## Usage
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/PureShinichi/PureClinicManager.git
+<!-- ===== Notes ===== -->
+## Notes
+- All pages (`index.html`, `dashboard.html`, `patients.html`, `appointments.html`) are structured with a sidebar for navigation and main content area for information display.  
+- The project is front-end only; login validation is simulated.  
+- Fully responsive design ensures usability on mobile, tablet, and desktop.  

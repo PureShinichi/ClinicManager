@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClinicManager - Login</title>
+<!-- Bootstrap CSS for responsive layout -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Candal&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ===== Login Container ===== -->
+    <div class="login-container">
+        <!-- Page heading -->
+        <h2>Welcome to ClinicManager</h2>
+        
+        <!-- Login Form -->
+        <form action="dashboard.html" method="post">
+            <!-- Username input -->
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" class="form-control" placeholder="Enter username">
+            </div>
+            
+            <!-- Password input -->
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" class="form-control" placeholder="Enter password">
+            </div>
+            
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+        
+        <!-- Error message placeholder -->
+        <p class="error-message">Invalid Username or Password!</p>
+    </div>
+
+<!--chart script-->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!--link to script.js-->
+<script src="script.js"></script>
+</body>
+</html>

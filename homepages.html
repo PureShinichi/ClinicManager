@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Home - PureClinic Manager</title>
+<!-- Bootstrap CSS for responsive layout -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Candal&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body class="bodyhome">
+
+<button class="menu-toggle">&#9776;</button>
+
+<div class="sidebar">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="patients.html">Patients</a>
+    <a href="appointments.html">Appointments</a>
+    <a href="index.html">Logout</a>
+</div>
+
+<div class="home-page">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="homepages.html">PureClinic.</a>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="homepages.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link" href="patients.html">Patients</a></li>
+          <li class="nav-item"><a class="nav-link" href="appointments.html">Appointments</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container home-content">
+    <h1 class="home-title">Welcome to</h1>
+    <h1 class="home-title1">PureClinic Manager</h1>
+    <p class="home-subtitle">Your best workplace for managing appointments and patient records efficiently.</p>
+
+    <div class="menu-container">
+      <div class="menu-button">Manage Appointments</button>
+      <div class="menu-dropdown">
+          <a href="dashboard.html">Dashboard</a>
+          <a href="patients.html">Patients</a>
+          <a href="appointments.html">Appointments</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 PureClinic Manager
+  </footer>
+</div>
+
+<div class="overlay"></div>
+
+<!--chart script-->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!--link to script.js-->
+<script src="script.js"></script>
+</body>
+</html>

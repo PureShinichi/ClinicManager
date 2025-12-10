@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patients - PureClinic Manager</title>
+<!--bootstrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!--Google fonts-->
+<link href="https://fonts.googleapis.com/css2?family=Candal&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+
+<!--Navigation Bar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="homepages.html">PureClinic.</a>
+    <div class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="homepages.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link active" href="patients.html">Patients</a></li>
+        <li class="nav-item"><a class="nav-link" href="appointments.html">Appointments</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--SideBar-->
+<button class="menu-toggle">&#9776;</button>
+
+<div class="sidebar">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="patients.html">Patients</a>
+    <a href="appointments.html">Appointments</a>
+    <a href="index.html">Logout</a>
+</div>
+
+<!--patients table-->
+<div class="container mt-5 dashboard-container">
+  <h1 class="home-title">Patients</h1>
+
+  <form id="patientForm" class="mb-4 row g-3">
+    <div class="col-md-3">
+      <input type="text" class="form-control" id="patientName" placeholder="Name" required> <--!adding data form-->
+    </div>
+    <div class="col-md-3">
+      <input type="text" class="form-control" id="patientPhone" placeholder="Phone" required>
+    </div>
+    <div class="col-md-3">
+      <select class="form-select" id="patientType" required>
+        <option value="">Select Appointment Type</option>
+        <option value="General Consultation">General Consultation</option>
+        <option value="Medical Checkup">Medical Checkup</option>
+        <option value="Eye Checkup">Eye Checkup</option>
+        <option value="Blood Test">Blood Test</option>
+        <option value="Urine Test">Urine Test</option>
+        <option value="Medicine Collection">Medicine Collection</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <select class="form-select" id="patientStatus" required>
+        <option value="">Select Status</option>
+        <option value="Completed">Completed</option>
+        <option value="Upcoming">Upcoming</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <select class="form-select" id="patientDoctor" required>
+        <option value="">Select Doctor</option>
+        <option value="Dr.Hariz">Dr.Hariz</option>
+        <option value="Dr.Granger">Dr.Granger</option>
+        <option value="Dr.Fatihah">Dr.Fatihah</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <input type="date" class="form-control" id="patientDate" required>
+    </div>
+    <div class="col-md-1">
+      <button type="submit" class="btn btn-success w-100">Add</button>
+    </div>
+  </form>
+
+<!--patients data Table-->
+  <div class="card shadow-sm">
+    <div class="table-responsive">
+      <table class="table table-hover align-middle" id="patientsTable">
+        <thead class="table-dark">
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Phone</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+<!--footer-->
+  <footer class="fixed-bottom bg-dark text-white text-center py-2">
+    &copy; 2025 PureClinic Manager
+  </footer>
+</div>
+
+<!--chart script-->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!--link to script.js-->
+<script src="script.js"></script>
+</body>
+</html>

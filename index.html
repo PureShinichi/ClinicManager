@@ -1,47 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ClinicManager - Login</title>
-<!-- Bootstrap CSS for responsive layout -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Candal&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- ===== Login Container ===== -->
-    <div class="login-container">
-        <!-- Page heading -->
-        <h2>Welcome to ClinicManager</h2>
-        
-        <!-- Login Form -->
-        <form action="dashboard.html" method="post">
-            <!-- Username input -->
-            <div class="form-group">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" class="form-control" placeholder="Enter username">
-            </div>
-            
-            <!-- Password input -->
-            <div class="form-group">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" class="form-control" placeholder="Enter password">
-            </div>
-            
-            <!-- Submit button -->
-            <button type="submit" class="btn btn-primary">Login</button>
-        </form>
-        
-        <!-- Error message placeholder -->
-        <p class="error-message">Invalid Username or Password!</p>
-    </div>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - Clinic Appointment</title>
 
-<!--chart script-->
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<!--link to script.js-->
+<!--bootstraps-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&family=BenchNine:wght@300;400;700&family=Charm:wght@400;700&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tilt+Warp&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+
+</head>
+<!--gif background-->
+<body class="bodyindex">
+
+<div class="text-center mb-4 px-2">
+    <h1 class="titleindex">Pure</h1>
+    <p class="indexdowntitle">Your Ultimate Workspace.</p>
+</div>
+<!--Login card-->
+<div class="login-card">
+    <h5 class="text-center mb-3">Welcome to Pure Clinic</h5>
+<!--form-->
+    <form onsubmit="Login(event)">
+        <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" placeholder="admin">
+        </div>
+
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="root">
+        </div>
+
+        <div id="error-msg" class="text-danger mb-3 small">Invalid Username or Password!</div>
+
+        <button type="submit" class="btn btn-success w-100">Login</button>
+    </form>
+</div>
+<!--JavaScript Linking-->
 <script src="script.js"></script>
+
 </body>
 </html>
